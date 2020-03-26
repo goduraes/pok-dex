@@ -47,6 +47,7 @@ export default class Home extends Component {
 
     search = (event) => {
         var search = document.getElementById('inputSearch').value;
+        search = search.toLowerCase();
         if (event.key === 'Enter') {
             window.location = `/search/name/${search}`;
         }

@@ -33,6 +33,7 @@ export default class Search extends Component {
 
     search = (event) => {
         var search = document.getElementById('inputSearch').value;
+        search = search.toLowerCase();
         if (event.key === 'Enter') {
             window.location = `/search/name/${search}`;
         }
